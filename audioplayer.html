@@ -3,66 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>繰り返し再生プログラム</title>
+    <title>スマホ対応オーディオプレーヤー</title>
     <style>
-       
-
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
         }
     </style>
-
-</head
 </head>
 <body>
-    
-    <
-<h1>音源を繰り返し再生するプログラム</h1>
-    
-   
-<audio id="audioPlayer" src="audio.mp3" loop></audio>
+    <h1>スマホ対応オーディオプレーヤー</h1>
+    <p>「再生」ボタンを押してください。</p>
+    <audio id="audioPlayer" src="audio.mp3" loop></audio>
     <br>
-    
-   
-<button onclick="playAudio()">再生</button>
-    
-    <
-<button onclick="pauseAudio()">一時停止</button>
-    
-   
-<button onclick="stopAudio()">停止</button>
+    <button onclick="playAudio()">再生</button>
+    <button onclick="pauseAudio()">一時停止</button>
+    <button onclick="stopAudio()">停止</button>
 
-    
-
-  
-
-
-<script>
-        cons
-
-        co
-
-       
-
-        const audio = document.getElementById('audioPla
-
-        const audio = document.getElementById('audioP
-
-        const audio = document.getElementById('aud
-
-        const audio = document.getElementById('
-
+    <script>
         const audio = document.getElementById('audioPlayer');
 
-        // ページが読み込まれたら自動再生
-        window.onload = function() {
-            audio.play();
-        };
-
         function playAudio() {
-            audio.play();
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生に失敗しました。ブラウザの設定を確認してください。");
+            });
         }
 
         function pauseAudio() {
@@ -74,9 +40,5 @@
             audio.currentTime = 0; // 再生位置をリセット
         }
     </script>
-
-</
 </body>
-
-</html
 </html>
