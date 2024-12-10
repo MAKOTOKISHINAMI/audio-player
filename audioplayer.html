@@ -1,27 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
+    
+    
+
+ 
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>スマホ対応オーディオプレーヤー</title>
     <style>
+        bod
+
+        
+
+     
+
+  
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            background-color: #004080;
         }
     </style>
 </head>
 <body>
     <h1>スマホ対応オーディオプレーヤー</h1>
     <p>「再生」ボタンを押してください。</p>
-    <audio id="audioPlayer" src="audio.mp3" loop></audio>
-    <br>
-    <button onclick="playAudio()">再生</button>
-    <button onclick="pauseAudio()">一時停止</button>
-    <button onclick="stopAudio()">停止</button>
+    
+   
+<audio id="audioPlayer" src="audio.mp3" loop>
+        
+       
+<p>オーディオを再生するには、ブラウザで<a href="audio.mp3">こちら</a>をクリックしてください。</p>
+    </audio>
+    
+    <
+<br>
+    
+ 
+<button onclick="playAudio()" aria-label="オーディオを再生">再生</button>
+    
+    <
+<button onclick="pauseAudio()" aria-label="オーディオを一時停止">一時停止</button>
+    
+   
 
-    <script>
+ 
+<button onclick="stopAudio()" aria-label="オーディオを停止">停止</button>
+
+    
+
+   
+<script>
+ 
+
+        const audio = document.getElementById('audioPlayer
+
+        const audio = document.getElementById('audioPla
+
+        const audio = document.getElementById('audio
+
+        const audio = document.getElementById('au
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生に失敗しました。ブラウザの設定を確認してください。
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生に失敗しました。ブラウザの設定を確認してくだ
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生に失敗しました。ブラウザの設定を確認
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生に失敗しました。ブラ
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生
+
         const audio = document.getElementById('audioPlayer');
 
         function playAudio() {
@@ -40,5 +138,7 @@
             audio.currentTime = 0; // 再生位置をリセット
         }
     </script>
+
+</body
 </body>
 </html>
