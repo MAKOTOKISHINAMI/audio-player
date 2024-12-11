@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+<
 <head>
-    
-   
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     
    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <
-<title>手動再生テスト</title>
+    <title>手動再生テスト</title>
+    <style>
+        bod
 
-</
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+<
 </head>
 <body>
     
     <
-<h1>手動で音声を再生してください</h1>
-    <audio id="audioPlayer" src="audio.mp3"></audio>
-    <button onclick="document.getElementById('audioPlayer').play()">再生</button>
+<h1>音声再生テスト</h1>
+    <p>再生ボタンを押して音声を確認してください。</p>
+    
+   
+<audio id="audioPlayer" src="audio.mp3"></audio>
+    
+   
+<br>
+    <button onclick="playAudio()">再生</button>
+    <button onclick="pauseAudio()">一時停止</button>
+    
+   
+<button onclick="stopAudio()">停止</button>
+
+    <script>
+   
+
+        const audio = document.getElementById('audi
+
+        const audio = document.getElementById('a
+
+        const audio = document.getElementById('audioPlayer');
+
+        function playAudio() {
+            audio.play();
+        }
+
+        function pauseAudio() {
+            audio.pause();
+        }
+
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0; // 再生位置をリセット
+        }
+    </script>
 </body>
 </html>
+
+``
