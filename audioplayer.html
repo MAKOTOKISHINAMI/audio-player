@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+<
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>スマホ対応オーディオプレーヤー</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    
+   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3テスト</title>
+
+</head
 </head>
 <body>
-    <h1>スマホ対応オーディオプレーヤー</h1>
-    <p>「再生」ボタンを押してください。</p>
-    <audio id="audioPlayer" src="audio.mp3" loop></audio>
-    <br>
-    <button onclick="playAudio()">再生</button>
-    <button onclick="pauseAudio()">一時停止</button>
-    <button onclick="stopAudio()">停止</button>
+    <h1>MP3テストページ</h1>
+    <p>以下のプレーヤーで音声が再生されるか確認してください。</p>
+    
+   
+<audio controls>
+        
+ 
+<source src="audio.mp3" type="audio/mpeg">
+        お使いのブラウザは音声ファイルを再生できません。
+    
+        お使いのブラウザは音声ファイルを再生できません。
+    </audio
 
-    <script>
-        const audio = document.getElementById('audioPlayer');
+        お使いのブラウザは音声ファイルを再生できません
 
-        function playAudio() {
-            audio.play().catch(error => {
-                console.error("自動再生エラー:", error);
-                alert("再生に失敗しました。ブラウザの設定を確認してください。");
-            });
-        }
+        お使いのブラウザは音声ファイルを再
 
-        function pauseAudio() {
-            audio.pause();
-        }
-
-        function stopAudio() {
-            audio.pause();
-            audio.currentTime = 0; // 再生位置をリセット
-        }
-    </script>
+        お使いのブラウ
+</audio>
 </body>
 </html>
+
+``
