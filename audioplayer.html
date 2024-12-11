@@ -2,199 +2,43 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    
-   
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自動再生オーディオプレーヤー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホ対応オーディオプレーヤー</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>自動再生オーディオプレーヤー</h1>
-    
-    <
-<audio id="audioPlayer" src="audio.mp3" autoplay loop></audio>
-    
-   
-<p>音声が自動的に再生されます。</p>
+    <h1>スマホ対応オーディオプレーヤー</h1>
+    <p>「再生」ボタンを押してください。</p>
+    <audio id="audioPlayer" src="audio.mp3" loop></audio>
+    <br>
+    <button onclick="playAudio()">再生</button>
+    <button onclick="pauseAudio()">一時停止</button>
+    <button onclick="stopAudio()">停止</button>
 
-    
-
-   
-<script>
-   
-
-        const audio = document.getElementById('audioP
-
-        const audio = document.getElementById('
-
+    <script>
         const audio = document.getElementById('audioPlayer');
 
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しまし
+        function playAudio() {
+            audio.play().catch(error => {
+                console.error("自動再生エラー:", error);
+                alert("再生に失敗しました。ブラウザの設定を確認してください。");
+            });
+        }
 
-        const audio = document.getElementById('audioPlayer');
+        function pauseAudio() {
+            audio.pause();
+        }
 
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラ
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオ
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してく
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまた
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブ
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオ
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。");
-        });
-
-        // 自動再生が失敗した場合のフォールバック
-        audio.play().catch(error => {
-            console.error("自動再生が
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。");
-        });
-
-        // 自動再生が失敗した場合のフォールバック
-        audio.play().catch(error => {
-            console.error("自動再生がブロックされました:", error);
-            alert("自動再生がブロックされました。画面をタップするなどの操作
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。");
-        });
-
-        // 自動再生が失敗した場合のフォールバック
-        audio.play().catch(error => {
-            console.error("自動再生がブロックされました:", error);
-            alert("自動再生がブロックされました。画面
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。");
-        });
-
-        // 自動再生が失敗した場合のフォールバック
-        audio.play().catch(error => {
-            console.error("自動再生がブロックされました:", error);
-            alert("自動再生がブロ
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。");
-        });
-
-        // 自動再生が失敗した場合のフォールバック
-        audio.play().catch(error => {
-            console.error("自動再生がブロックされました:", error);
-            alert("自
-
-        const audio = document.getElementById('audioPlayer');
-
-        // 再生エラーをキャッチしてエラーメッセージを表示
-        audio.addEventListener('error', () => {
-            console.error("オーディオの読み込み中にエラーが発生しました。");
-            alert("オーディオの再生に失敗しました。ブラウザまたは音源を確認してください。");
-        });
-
-        // 自動再生が失敗した場合のフォールバック
-        audio.play().catch(error => {
-            console.error("自動再生がブロックされました:", error);
-            alert("自動再生がブロックされました。画面をタップするなどの操作を行ってください。");
-        });
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0; // 再生位置をリセット
+        }
     </script>
 </body>
 </html>
