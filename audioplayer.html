@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<
 <head>
     <meta charset="UTF-8">
     
    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手動再生テスト</title>
-    <style>
-        bod
-
-       
-
+    <title>繰り返し再生プログラム</title>
+    
+   
+<style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
-        }
-        button {
-            font-size: 16px;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
+            padding: 20px;
         }
     </style>
 
-<
+</
 </head>
 <body>
     
     <
-<h1>音声再生テスト</h1>
-    <p>再生ボタンを押して音声を確認してください。</p>
+<h1>音源を繰り返し再生するプログラム</h1>
+    <audio id="audioPlayer" src="audio.mp3" loop></audio>
+    <br>
     
    
-<audio id="audioPlayer" src="audio.mp3"></audio>
+<button onclick="playAudio()">再生</button>
     
    
-<br>
-    <button onclick="playAudio()">再生</button>
-    <button onclick="pauseAudio()">一時停止</button>
+<button onclick="pauseAudio()">一時停止</button>
     
-   
+    <
 <button onclick="stopAudio()">停止</button>
 
     <script>
-   
+        co
 
-        const audio = document.getElementById('audi
+       
 
-        const audio = document.getElementById('a
+    
+
+        const audio = document.getElementById('audioPlayer
 
         const audio = document.getElementById('audioPlayer');
+
+        // ページが読み込まれたら自動再生
+        window.onload = function() {
+            audio.play();
+        };
 
         function playAudio() {
             audio.play();
@@ -68,6 +64,8 @@
         }
     </script>
 </body>
+
+</
 </html>
 
 ``
